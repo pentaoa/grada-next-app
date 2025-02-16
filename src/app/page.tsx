@@ -9,7 +9,7 @@ export default async function HomePage() {
       </header>
 
       <section className="my-2 text-zinc-400">
-        118°10'48" E  25°04'12" N
+         118&deg;10&apos;48&quot; E  25&deg;04&apos;12&quot; N
       </section>
 
       <section className="my-9">
