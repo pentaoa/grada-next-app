@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { LayoutGroup, motion } from "framer-motion";
 import { Home, Ship, Flower } from "lucide-react";
@@ -24,7 +25,7 @@ export default function Footer() {
       {/* 左侧 Logo */}
       <div className="w-8 my-2 ml-4 hidden sm:block">
         <Link href="/">
-          <img src="/logo.svg" alt="Logo" className="w-8 h-8 cursor-pointer" />
+          <Image src="/logo.svg" alt="Logo" width={32} height={32} className="cursor-pointer" />
         </Link>
       </div>
 
