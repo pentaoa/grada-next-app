@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: '港口',
@@ -12,27 +13,13 @@ export default function AboutPage() {
       <div className="font-semibold my=5 text-stone-500">出发!</div>
       
       <div className="group my-6">
-        <a href="https://gpt.grada.pro"> 
-          <img
-            src="https://ihs-1317591693.cos.ap-guangzhou.myqcloud.com/grdoc/gpt.png"
-            className="h-56 w-full rounded-xl object-cover shadow-xl dark:hover:shadow-stone-900 transition group-hover:drop-shadow-2xl"
-          />
-        </a>
-          <div className="p-4">
-            <div className="text-lg font-medium text-gray-900 dark:text-zinc-300">
-              ChatGPT 服务
-            </div>
-            <div className="mt-2 line-clamp-3 text-sm/relaxed text-gray-700 dark:text-zinc-400">
-              支持 GPT-4。
-            </div>
-          </div>
-      </div>
-      
-      <div className="group my-6">
         <Link href="/event/mc"> 
-          <img
+          <Image
             src="/images/ph.png"
-            className="h-56 w-full rounded-xl object-cover shadow-xl dark:hover:shadow-stone-900 transition group-hover:drop-shadow-2xl"
+            alt="Minecraft 服务器"
+            width={600}
+            height={336}
+            className="h-56 w-full rounded-xl object-cover shadow-xl dark:hover:shadow-gray-900 transition group-hover:drop-shadow-2xl"
           />
         </Link>
           <div className="p-4">
@@ -47,11 +34,13 @@ export default function AboutPage() {
 
       <div className="group my-6">
         <a href="https://github.com/pentaoa/grdocapp/commit/main"> 
-        <img
-        alt="Macos"
-        src="/images/github.png"
-        className="h-56 w-full rounded-xl object-cover shadow-xl dark:hover:shadow-stone-900 transition group-hover:drop-shadow-2xl"
-        />
+          <Image
+            alt="更新日志"
+            src="/images/github.png"
+            width={600}
+            height={336}
+            className="h-56 w-full rounded-xl object-cover shadow-xl dark:hover:shadow-gray-900 transition group-hover:drop-shadow-2xl"
+          />
         </a>
         <div className="p-4">
           <h3 className="text-lg font-medium text-gray-900 dark:text-zinc-300">

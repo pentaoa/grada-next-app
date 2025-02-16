@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: '花园',
@@ -18,9 +19,13 @@ export default async function BlogPage() {
 
       <div className="group my-5">
         <Link href="/garden/chongqing">
-          <div className="rounded-xl w-full object-cover shadow-xl dark:hover:shadow-stone-800 transition group-hover:drop-shadow-2xl">
-            <img
+          <div className="relative rounded-xl w-full object-cover shadow-xl dark:hover:shadow-stone-800 transition group-hover:drop-shadow-2xl">
+            <Image
               src="/images/trip_to_chongqing.jpg"
+              alt="重庆之旅"
+              layout="responsive"
+              width={600}
+              height={336}
               className="rounded-xl"
             />
           </div>
@@ -38,9 +43,13 @@ export default async function BlogPage() {
 
       <div className="group my-5">
         <Link href="/garden/englishpre">
-          <div className="rounded-xl w-full object-cover shadow-xl dark:hover:shadow-stone-800 transition group-hover:drop-shadow-2xl">
-            <img
+          <div className="relative rounded-xl w-full object-cover shadow-xl dark:hover:shadow-stone-800 transition group-hover:drop-shadow-2xl">
+            <Image
               src="https://ihs-1317591693.cos.ap-guangzhou.myqcloud.com/grdoc/gpt.png"
+              alt="早八传奇"
+              layout="responsive"
+              width={600}
+              height={336}
               className="rounded-xl"
             />
           </div>
