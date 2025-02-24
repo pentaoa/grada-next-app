@@ -3,18 +3,18 @@ import React from 'react';
 
 export default async function HomePage() {
   return (
-    <section className="mt-7 md:mt-20 lg:mt-32 max-w-3xl min-w-0 mx-3 lg:mx-auto">
+    <section className="mt-7 md:mt-20 lg:mt-32 max-w-3xl mx-3 lg:mx-auto">
       <header>
-        <h1 className="font-bold text-4xl">Grada - 个人网站</h1>
+        <h1 className="font-bold text-4xl noto-serif-sc">Grada - 个人网站</h1>
       </header>
 
-      <section className="my-2 text-zinc-400">
+      <section className="my-2 text-zinc-400 noto-serif-sc">
          118&deg;10&apos;48&quot; E  25&deg;04&apos;12&quot; N
       </section>
 
       <section className="my-9">
         <div
-          className="text-right py-3 rounded-lg text-8xl font-extrabold italic text-cyan-900 shadow-2xl"
+          className="text-right py-3 rounded-lg text-8xl font-extrabold italic text-cyan-900 shadow-2xl noto-serif-sc"
           style={{
             backgroundImage: 'url(/images/suda.png)',
             backgroundSize: 'cover',
