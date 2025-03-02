@@ -64,8 +64,19 @@ export default async function BlogPage() {
           </div>
         </div>
       </div>
+
       <div id="article"></div>
 
+      <Link
+        className="flex flex-col space-y-1 m-5"
+        href={`/garden/izumi`}
+      >
+        <div className="p-3 w-full rounded-lg border-solid">
+          <div className="text-xl font-medium">和风细雨咏清泉</div>
+          <div className="text-gray-500">Izumi</div>
+          <div className="text-gray-500 text-sm/relaxed">2023-05-04</div>
+        </div>
+      </Link>
     </section>
   );
 }
