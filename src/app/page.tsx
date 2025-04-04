@@ -27,25 +27,34 @@ export default async function HomePage() {
 
       <div className="my-14">
         <div className="bg-opacity-90 backdrop-filter backdrop-blur-lg p-3 rounded-lg text-2xl font-semibold italic shadow-xl bg-amber-500">
-          重庆之旅
+          关于我
         </div>
-        <Link href="/garden/chongqing">
-          <p className="underline my-5 text-2xl italic text-slate-900 dark:text-zinc-400">
-            观看视频
-          </p>
-        </Link>
+        <p className="my-5 text-lg text-slate-900 dark:text-zinc-400">
+          一个来自中国的大二学生，喜欢音乐和计算机，喜欢编程和设计，喜欢旅行和摄影。
+        </p>
+        <p className="my-5 text-lg text-slate-900 dark:text-zinc-400">
+          研究方向：人工智能与计算神经科学
+        </p>
+        <p className="my-5 text-lg text-slate-900 dark:text-zinc-400">
+          视觉解码、表征学习、可控生成与闭环神经调控，探索智能实验范式及人机交互优化方法。
+        </p>
       </div>
       
       <div className="my-14">
         <div className="bg-opacity-90 backdrop-filter backdrop-blur-lg p-3 rounded-lg text-2xl font-semibold italic shadow-xl bg-cyan-600">
-          泉州之旅
+          旅行
         </div>
         <p className="my-5">
-          6月17日到19日，一场小小的毕业旅行。
+          下次去哪里呢？
         </p>
         <Link href="/garden/2023-06-21">
           <p className="underline my-5 text-2xl italic text-slate-900 dark:text-zinc-400">
-            查看照片墙
+            泉州之旅
+          </p>
+        </Link>
+        <Link href="/garden/chongqing">
+          <p className="underline my-5 text-2xl italic text-slate-900 dark:text-zinc-400">
+            重庆之旅
           </p>
         </Link>
       </div>
@@ -57,9 +66,16 @@ export default async function HomePage() {
         <div className="my-5 text-2xl font-semibold italic text-slate-900 dark:text-zinc-400">
           欢迎来到 Grdoc 的 V0.3 船新版本！
         </div>
-        自主开发设计（有一定缺陷）！使用电脑访问，效果更佳。
       </div>
 
+      <div className="my-14 text-center">
+        <Link href="/about">
+          <p className="text-gray-600 dark:text-gray-400 text-sm underline">
+            关于本站
+          </p>
+        </Link>
+      </div>
+      
     </section>
   );
 }

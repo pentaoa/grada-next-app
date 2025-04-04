@@ -12,15 +12,15 @@ export default async function Izumi() {
                 和风细雨咏清泉
             </h1>
             <div className="grid grid-cols-[auto_1fr_auto] space-x-2 items-center mt-4 mb-8 text-sm">
-                <div className="bg-neutral-100 dark:bg-neutral-800 rounded-md px-2 py-1 tracking-tighter">
+                <div className="bg-neutral-100 dark:bg-gray-700 rounded-md px-2 py-1 tracking-tighter">
                     Izumi
                 </div>
-                <div className="bg-neutral-100 dark:bg-neutral-800 rounded-md px-2 py-1 tracking-tighter">
+                <div className="bg-neutral-100 dark:bg-gray-700 rounded-md px-2 py-1 tracking-tighter">
                     2023-05-04
                 </div>
             </div>
 
-            <article className="prose dark:prose-dark lg:prose-xl">
+            <article className="prose dark:prose-invert">
                 <h3>咏清泉·毕业有感</h3>
                 <p><strong>2023-06-18</strong></p>
                 <p>小雏丰羽起青鸢，落笔鸣铃别讲轩。</p>
